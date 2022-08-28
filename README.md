@@ -1,1 +1,1 @@
-# erin-jacobson.github.io
+# Erin-Jacobson.github.io
