@@ -17,7 +17,7 @@ h1, h2 {
 /* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
 #wrapper {
 	width:900px;
-	margin:0 auto;    /* centers wrapper */
+	margin:0 auto;/* centers wrapper */
 }
 
 /* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
@@ -26,7 +26,7 @@ h1, h2 {
 	text-align:left;
 	font-size:16px;
 	color:#1D1944;
-	background-color:#9A9A9A
+	background-color:#9A9A9A;
  }
 
 .stepContent{ 
@@ -52,4 +52,14 @@ border-radius: 20px;
 box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
 }
 
+.warning {
+		background-color: #e3fbe3;
+		padding:10px;
+		border-radius:20px;
+	}
+
+.material-icons {
+	color:green; 
+	font-size:3em;
+}
 
