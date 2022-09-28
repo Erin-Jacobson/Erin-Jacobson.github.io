@@ -1,0 +1,55 @@
+body {
+	background-color:#6D8BE3;   /* background color */
+	color: #444;          /* text color for the entire document */
+	text-align: center;
+	font-size: 18px;
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+#wrapper {
+	width:900px;
+	margin:0 auto;         /* centers wrapper */
+ 	text-align:center;
+	background-color: rgba(255, 255, 255, 0.8);  /* creates white background with 80% opacity */
+}
+
+table {
+	margin:0 auto;  /* centers table*/
+}
+
+td {
+	background-color: white;  /* sets background color for table cells*/
+}
+
+h1, h2 { 
+	text-align:center;     /* centers h1 and h2 content */
+	color:#000000;
+}
+
+audio { 
+	width:200px;   /* sets the width of the audio controls */
+	align-items: center;
+	align-content: center;
+	align-self: center;
+}
+
+
+img { 
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+}
+
+a {
+	border-radius: 5px;
+	padding: 15px;
+	margin: 3px;
+	font-size: 125%;
+	background-color:  #131215; 
+	color:  #795EF1; 
+}
+
+a:hover {
+	border-radius: 5px;
+	font-size:200%;
+	background-color: #FFFFFF; 
+	color: #795EF1; 
