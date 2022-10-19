@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Punnett Squares</title>
+<link href="css/final.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="js/hotspot.js"></script>
+</head>
+
+<body>
+	 <h1> Punnett Squares </h1>
+	
+	<!--navigation menu tags-->
+	<a href="index.html">  Home </a>
+	<a href="vocab.html"> Genetics Vocabulary Review </a>
+	<a href="single.html"> Single Factor Crosses </a>
+	<a href="two.html"> Two Factor Crosses </a>
+	<a href="words.html"> Two Factor Word Problems </a>
+	<a href="test.html"> Practice Questions </a>
+	<a href="resource.html"> Additional Practice Resources </a>
+
+	<br><br>
+	<div id="wrapper">
+ <h1>Work through these pages to get some help with Punnett Squares.</h1>
+		<p>Are you ready to get started?</p><br><br><br>
+<h2>How do we correctly set up a dihybrid cross?</h2>
+ 
+<h3 id="hint">Hint: Hover over the image below to find out!</h3>
+ 
+<img onmouseenter="showAnswer()" id="punnett"  src="img/blankpunnet.png"   />
+ 
+<img onmouseleave="hideAnswer()" id="punnett_complete" src="img/hoverdihybrid.png" />
+ 
+           <div id="answer"></div>  <!-- This is a placeholder to display here the answer-->
+ 
+</div> <!-- closing  “wrapper” -->
+
+<script>
+ function showAnswer() {
+	   $("#punnett").hide();
+	   $("#punnett_complete").show();
+	   $("#answer").html("<h2>Use the bigger box!</h2>");
+	}
+
+function hideAnswer() {
+	   $("#punnett").show();
+	   $("#punnett_complete").hide();
+	   $("#answer").html("");  
+	}
+</script>
+	
+</body>
+</html>

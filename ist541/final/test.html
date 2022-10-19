@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Punnett Squares</title>
+<link href="css/final.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/hotspot.js"></script>
+</head>
+
+<body>
+	
+	<h1> Practice </h1>
+	
+	<!--navigation menu tags-->
+	<a href="index.html">  Home </a>
+	<a href="vocab.html"> Genetics Vocabulary Review </a>
+	<a href="single.html"> Single Factor Crosses </a>
+	<a href="two.html"> Two Factor Crosses </a>
+	<a href="words.html"> Two Factor Word Problems </a>
+	<a href="test.html"> Practice Questions </a>
+	<a href="resource.html"> Additional Practice Resources </a>
+	
+	
+	<div id="wrapper">       
+ <h2>Which Punnett Square set up is incorrect?</h2>
+ <h3> Click on it! </h3>
+ <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel"> 
+           Feedback
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div id="feedback"></div>
+      </div><!-- /.modal-body -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+		
+ 
+
+ <img src="img/blankpunnet.png" alt="Set Up" usemap="#Map"/>
+ <map name="Map">
+   <area id="incorrect" shape="rect" coords="7,54,241,272" href="#" alt="Incorrect" title="incorrect">
+   <area id="correct" shape="rect" coords="302,46,869,380" href="#" alt="Correct" title="correct">
+ </map>
+<br /><br />
+  <div style="font-size:10px">Custom Image.</div><br /> 
+</div><!--closing wrapper-->
+
+<div id="wrapper">
+<h1>What fraction of the offspring in a dihybrid cross would we expect to be homozygous recessive for both traits?</h1>
+<h3>Click on one of the following choices</h3>
+
+<h2 onclick="wrongAnswer()" class="choices"> 9/16 </h2>
+<h2 onclick="wrongAnswer()" class="choices"> 3/16 </h2>
+<h2 onclick="wrongAnswer()" class="choices"> 2/16 </h2>
+<h2 onclick="rightAnswer()" class="choices"> 1/16 </h2>
+
+<div id="feedback"></div>
+<div id="answer"></div>
+	<img id="ups" src="img/ups.png" />
+</div>
+
+	<script>
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! </h2>");
+		  $("#ups").show();
+      }
+		function wrongAnswer(){
+      $("#feedback").html("<h2 style='color:red'> Incorrect, try again! </h2>");
+		$("#ups").hide();
+   }
+   </script>
+
+	
+</body>
+</html>
